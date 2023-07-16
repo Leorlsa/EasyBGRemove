@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Remoção de Fundo - Resultado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .image-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .image-container img {
+      max-width: 100%;
+    }
+
+    .download-link {
+      text-align: center;
+    }
+
+    .download-link a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .download-link a:hover {
+      background-color: #45a049;
+    }
+
+    .enhance-button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .enhance-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Remoção de Fundo - Resultado</h1>
+    <div class="image-container">
+      <img src="data:image/png;base64,{{ image_data }}" alt="Resultado">
+    </div>
+    <p class="download-link">
+      <a href="data:image/png;base64,{{ image_data }}" download="imagem_sem_fundo.png">Baixar Imagem</a>
+    </p>
+  </div>
+
+</body>
+</html>
